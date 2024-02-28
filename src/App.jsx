@@ -1,8 +1,9 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, useNavigate } from "react-router-dom";
 import Header from "./components/Header";
 import { useEffect, useState } from "react";
 import Sidebar from "./components/Sidebar";
 import Home from "./components/Home";
+
 
 import Details from "./components/Details";
 
@@ -10,6 +11,7 @@ function App() {
   const [animeList, setAnimeList] = useState([]);
   const [topAnime, setTopAnime] = useState([]);
   const [search, setSearch] = useState("");
+  const navigate = useNavigate();
   
 
   const GetTopAnime = async () => {
@@ -25,6 +27,7 @@ function App() {
     e.preventDefault();
 
     FetchAnime(search);
+    navigate('/explore');
   };
 
   const FetchAnime = async (query) => {
@@ -45,26 +48,35 @@ function App() {
   
 
   return (
-    <BrowserRouter>
-    <Header
+    <>
+    {/* <Header
           HandleSearch={HandleSearch}
           search={search}
           setSearch={setSearch}
-        />
+          topAnime={topAnime}
+        /> */}
       
-
-      <Sidebar topAnime={topAnime} />
+        
+      
       
       <Routes>
+        <Route path="/" element={<Header
+          HandleSearch={HandleSearch}
+          search={search}
+          setSearch={setSearch}
+          topAnime={topAnime}
+        />}/>
       
         
         
 
-        <Route path="/" element={<Home animeList={animeList} />} />
+        <Route path="/explore" element={<Home animeList={animeList} />} />
+        
         
         <Route path="/anime/:id" element={<Details />} />
       </Routes>
-    </BrowserRouter>
+      {/* <Sidebar topAnime={topAnime} /> */}
+    </>
   );
 }
 

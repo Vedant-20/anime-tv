@@ -5,6 +5,13 @@ function Home({animeList}) {
 
 
   return (
+    <>
+    <header className='flex justify-center items-center bg-gradient-to-r from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90%'>
+    <Link to={'/'}>
+    <button className='mt-8 mb-8 rounded-md bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-green-600/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-green-600' >Go To Home</button>
+    </Link>
+    
+    </header>
     <div className='flex flex-wrap gap-3 mb-12'>
         <div className='w-full items-center justify-center text-center'>
             <h1 className='text-lime-400 text-2xl font-bold'>Your Search Results Will Appear Here 👇</h1>
@@ -26,6 +33,7 @@ function Home({animeList}) {
         ))}
         
     </div>
+    </>
   )
 }
 

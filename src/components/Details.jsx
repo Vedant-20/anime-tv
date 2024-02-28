@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
+import { Link } from 'react-router-dom'
 
 function Details() {
   const [animeDetails, setAnimeDetails] = useState({});
@@ -47,6 +48,13 @@ function Details() {
   }, [id]);
 
   return (
+    <>
+    <header className='flex justify-center items-center bg-gradient-to-r from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90%'>
+    <Link to={'/'}>
+    <button className='mt-8 mb-8 rounded-md bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-green-600/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-green-600' >Go To Home</button>
+    </Link>
+    
+    </header>
     <div className="w-full h-screen">
       <h1 className="text-center text-3xl pink-text-gradient font-extrabold mt-16">
         {title}
@@ -156,6 +164,7 @@ function Details() {
         })}
       </div>
     </div>
+    </>
   );
 }
 
