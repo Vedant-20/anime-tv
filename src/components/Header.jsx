@@ -23,15 +23,15 @@ function Header(props) {
       <div className="flex justify-center items-center">
         <h2 className="text-yellow-300 font-bold text-3xl">Top Animes 👉</h2>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-4 lg:grid-cols-8 gap-4 p-8 rouded-xl">
+      <div className="grid grid-cols-1 md:grid-cols-4 lg:grid-cols-8 gap-4 p-8 rounded-xl">
       {props.topAnime.map((anime) => (
         
           <div
             key={anime?.mal_id}
-            className=" mb-25 flex-col "
+            className=" mb-25 flex-col mybg  "
           >
           <Link to={`/anime/${anime.mal_id}`} key={anime?.mal_id} >
-            <div className="p-2 rounded-2xl transition delay-150 duration-300 ease-in-out">
+            <div className="p-2   rounded-2xl transition delay-150 duration-300 ease-in-out">
               <img
                 className="w-full h-full object-cover object-center rounded-xl"
                 src={anime?.images?.jpg.image_url}

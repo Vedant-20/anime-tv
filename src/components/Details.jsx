@@ -149,7 +149,7 @@ function Details() {
           const { images, name, mal_id } = character.character;
           return (
             <div
-              className="p-2 rounded-2xl transition delay-150 duration-300 ease-in-out"
+              className="p-2 mybg rounded-2xl transition delay-150 duration-300 ease-in-out"
               key={index}
             >
               <img
