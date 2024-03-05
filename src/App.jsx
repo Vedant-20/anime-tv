@@ -6,6 +6,7 @@ import Home from "./components/Home";
 
 
 import Details from "./components/Details";
+import Footer from "./components/Footer";
 
 function App() {
   const [animeList, setAnimeList] = useState([]);
@@ -20,7 +21,7 @@ function App() {
     );
     console.log("TEmp Data", temp.data.slice(0, 5));
 
-    setTopAnime(temp.data.slice(0, 5));
+    setTopAnime(temp.data.slice(0, 10));
   };
 
   const HandleSearch = (e) => {
@@ -49,12 +50,7 @@ function App() {
 
   return (
     <>
-    {/* <Header
-          HandleSearch={HandleSearch}
-          search={search}
-          setSearch={setSearch}
-          topAnime={topAnime}
-        /> */}
+    
       
         
       
@@ -75,7 +71,8 @@ function App() {
         
         <Route path="/anime/:id" element={<Details />} />
       </Routes>
-      {/* <Sidebar topAnime={topAnime} /> */}
+      <Footer/>
+      
     </>
   );
 }

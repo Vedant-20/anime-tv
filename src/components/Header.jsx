@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 function Header(props) {
   return (
     <>
-    <header className='flex justify-between items-center'>
+    <header className='flex mybg justify-between items-center'>
     <Link to={'/'}>
     <h1 className='text-2xl font-bold pink-text-gradient'>The <strong className='text-2xl green-text-gradient font-bold underline'>Anime</strong> Tv</h1>
     </Link>
