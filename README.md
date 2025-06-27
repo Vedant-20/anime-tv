@@ -190,13 +190,13 @@ Built with ❤️ by Vedant Warjurkar
 
 <h2>Project Screenshots:</h2>
 
-<img src="https://github.com/Vedant-20/anime-tv/assets/91717779/fad255b0-ad96-4c4e-82b8-c681bee5786f" alt="project-screenshot" width="1000" height="1000/">
+<img src="https://github.com/user-attachments/assets/3bf273ff-d9bd-48d0-a911-8278f57a3756" alt="project-screenshot" width="1000" height="1000/">
 
-<img src="https://github.com/Vedant-20/anime-tv/assets/91717779/134ab21e-2ace-4622-bf3a-fbd2a3090e37" alt="project-screenshot" width="1000" height="1000/">
+<img src="https://github.com/user-attachments/assets/54d0e0b0-c53e-4ac3-ad2d-7bd43c5692cb" alt="project-screenshot" width="1000" height="1000/">
 
-<img src="https://github.com/Vedant-20/anime-tv/assets/91717779/6346c2c2-a0a2-46f4-929c-7d02da27b734" alt="project-screenshot" width="1000" height="1000/">
+<img src="https://github.com/user-attachments/assets/fd5015b3-9b26-492d-803d-78ce64f72b1d" alt="project-screenshot" width="1000" height="1000/">
 
-<img src="https://github.com/Vedant-20/anime-tv/assets/91717779/6ff31c9a-b459-41bd-9e9f-d4588d4099ec" alt="project-screenshot" width="1000" height="1000/">
+<img src="https://github.com/user-attachments/assets/adfd752d-d620-4b4c-af6a-f3c23eb7b194" alt="project-screenshot" width="1000" height="1000/">
 
   
   
